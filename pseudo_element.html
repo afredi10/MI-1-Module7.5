@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            font-size: 35px;
+        }
+        h3::after{
+            content: '.pdf';
+            color: red;
+            font-size: 25px;
+            background-color: aqua;
+        }
+        h3::before{
+            content: 'Start: ';
+            color: rgba(255, 0, 221, 0.548);
+            font-size: 35px;
+            background-color: rgba(0, 255, 34, 0.781);
+        }
+        p::first-letter{
+            font-size: 3em;
+        }
+        p::first-line{
+            background-color: rgba(71, 103, 209, 0.685);
+        }
+        ::selection{
+            background-color: brown;
+        }
+        .button-content{
+            font-size: 30px;
+        }
+        .para{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Heading-1</h3>
+    <h3>Heading-2</h3>
+    <h3>Heading-3</h3>
+
+    <div class="button-container">
+        <button onclick="Welcome()" class="button-content">Click here for <br> getting discount code</button>
+    </div>
+
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugiat, corrupti debitis perferendis qui rem! Iusto quia modi a quis! A ut recusandae totam possimus delectus corporis, odio saepe atque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugiat, corrupti debitis perferendis qui rem! Iusto quia modi a quis! A ut recusandae totam possimus delectus corporis, odio saepe atque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugiat, corrupti debitis perferendis qui rem! Iusto quia modi a quis! A ut recusandae totam possimus delectus corporis, odio saepe atque?</p>
+    </div>
+
+    <script>
+        // alert('Welcome to my Football Club')
+        function Welcome() {
+            alert('code: afredi10');
+        }
+ 
+    </script>
+</body>
+</html>
